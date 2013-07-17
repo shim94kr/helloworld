@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>설문 한 번 해주세요 ~^^</title>
+    <script src="http://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+    <table class="table">
+        <tr>
+            <td>question</td>
+            <td>pub_date</td>
+        </tr>
+    {% for p in polls %}
+        <tr>
+            <td>{{ p.question }}</td>
+            <td>{{ p.pub_date }}</td>
+        </tr>
+    <br>
+    {% endfor %}
+    </table>
+</body>
+</html>
