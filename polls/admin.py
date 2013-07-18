@@ -1,7 +1,7 @@
 __author__ = 'cloud'
 from django.contrib import admin
 from polls.models import Choice,Poll
-
+"""
 admin.site.register(Poll)
 admin.site.register(Choice)
 
@@ -17,4 +17,3 @@ class PollAdmin (admin.ModelAdmin):
     ]
     inlines = [ChoiceInline]
 admin.site.register(Poll, PollAdmin)
-"""
