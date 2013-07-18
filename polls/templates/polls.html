@@ -17,7 +17,13 @@
             <td>{{ p.question }}</td>
             <td>{{ p.pub_date }}</td>
         </tr>
-    <br>
+        <tr>
+            <td>
+                {%  for c in p.choice_set.all  %}
+                    {{ c }}
+                {% endfor %}
+            </td>
+        </tr>
     {% endfor %}
     </table>
 </body>
